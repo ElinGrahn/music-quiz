@@ -1,27 +1,55 @@
+/*import from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Kalam:wght@300;400&display=swap');
+
+
 body{
-    background-color: red;
+    background-color: #ffd2c6;
 }
 
 .main{
-background-color: blue;
 height: 150px;
 width: 100%;
-top: 0px;
+margin-top: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+border: 2px double black;
+background-color: #dbc1ac;
+}
+
+.main>h2{
+    padding: 10px;
+    margin-left: 7px;
+    font-family: Kalam;
+    font-weight: 400;
 }
 
 .main-div{
     height: 50%;
     width: 90%;
-    background-color: aliceblue;
+    background-color: #fff4e6;
     position: absolute;
-    z-index: 97;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 6px;
+    text-align: center;
+    border: 2px double black;
+}
+
+.questions-div>p{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Kalam';
+        font-weight: 300;
 }
 
 .btn{
     position: absolute;
-    border: black;
-    z-index: 98;
-    background-color: rebeccapurple;
+    border: 1px solid black;
+    background-color: #dbc1ac;
+    height: 40px;
+    width: 70px;
+    margin-top: 15px;
+    left: 90px;
+    font-family: Kalam;
 }
