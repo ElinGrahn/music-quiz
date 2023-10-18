@@ -1,0 +1,27 @@
+body{
+    background-color: red;
+}
+
+.main{
+background-color: blue;
+height: 150px;
+width: 100%;
+top: 0px;
+}
+
+.main-div{
+    height: 50%;
+    width: 90%;
+    background-color: aliceblue;
+    position: absolute;
+    z-index: 97;
+    margin-top: 50px;
+    margin-left: 6px;
+}
+
+.btn{
+    position: absolute;
+    border: black;
+    z-index: 98;
+    background-color: rebeccapurple;
+}
