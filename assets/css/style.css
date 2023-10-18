@@ -26,7 +26,7 @@ background-color: #dbc1ac;
 }
 
 .main-div{
-    height: 50%;
+    height: 70%;
     width: 90%;
     background-color: #fff4e6;
     position: absolute;
@@ -75,21 +75,27 @@ background-color: #dbc1ac;
         .questions-div>p {
             font-size: xx-large;
         }
+
+        .div-btn{
+            justify-content: center;
+        }
     
         .btn {
             height: 65px;
             width: 100px;
             font-size: larger;
-            margin-left: 200px;
         }
 }
 
 /*Media query min-width 992px*/
 @media  screen and (min-width: 992px) {
 
+    .main-div{
+        height: 80%;
+    }
 
     .btn{
        margin-top: 3%;
-       margin-left: 37%;
+       
     }
 }
