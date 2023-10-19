@@ -119,4 +119,4 @@ const questions = [
             { text: "Darkbeat", correct: false }
         ]
     },
-]
+];
