@@ -60,6 +60,11 @@ background-color: #dbc1ac;
     font-family: Kalam;
 }
 
+.options-btn:hover{
+    border-color: aliceblue;
+}
+
+
 .options-btn{
     width: 90%;
     text-align: left;
