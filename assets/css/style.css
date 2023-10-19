@@ -69,6 +69,10 @@ background-color: #dbc1ac;
     display: none;
 }
 
+.next-btn, .submit-btn{
+    display: none;
+}
+
 
 /*Media query min-width 768px*/
 @media screen and (min-width: 768px) {
