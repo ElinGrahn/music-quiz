@@ -74,7 +74,7 @@ background-color: #dbc1ac;
     display: none;
 }
 
-.next-btn, .submit-btn{
+.next-btn, .submit-btn, .restart-btn{
     display: none;
 }
 
