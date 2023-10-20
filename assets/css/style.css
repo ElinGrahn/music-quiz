@@ -68,6 +68,12 @@ background-color: #dbc1ac;
 .options-btn{
     width: 90%;
     text-align: left;
+    border: 1px solid black;
+    background-color: #dbc1ac;
+    height: 40px;
+    margin-top: 15px;
+    left: 90px;
+    font-family: Kalam;
 }
 
 
