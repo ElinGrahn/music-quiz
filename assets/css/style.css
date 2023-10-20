@@ -70,14 +70,10 @@ background-color: #dbc1ac;
     text-align: left;
 }
 
-.answer-btn{
+
+.hide{
     display: none;
 }
-
-.next-btn, .submit-btn, .restart-btn{
-    display: none;
-}
-
 
 /*Media query min-width 768px*/
 @media screen and (min-width: 768px) {

@@ -1,30 +1,34 @@
 let intro = document.getElementById('intro');
-const answerButtons = document.getElementsByClassName('.answer-btn');
+const answerButtons = document.querySelector('.answer-btn');
 const startButton = document.querySelector('.start-btn');
-const nextButton = document.getElementsByClassName('.next-btn');
-const SubmitButton = document.getElementsByClassName('.submit-btn');
-const restart = document.getElementsByClassName('.restart-btn');
+const nextButton = document.querySelector('.next-btn');
+const SubmitButton = document.querySelector('.submit-btn');
+const restart = document.querySelector('.restart-btn');
 
-let currentQuestionIndex = 0;
+
+let currentQuestionIndex = 1;
 let score = 0;
 
 startButton.addEventListener('click', startGame);
 
 function startGame (){
     console.log('hello');
-    intro.remove();
+    startButton.classList.add('hide');
+    answerButtons.classList.remove('hide');
+    const randomQuestions = questions.sort(() => Math.random() - .5);
+    nextQuestion();
 }
 
+function nextQuestion() {
+
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNum = currentQuestionIndex + 1;
+    intro.innerHTML = currentQuestionIndex + '. ' + currentQuestion.question;
+}
 
 answerButtons.addEventListener('click', chooseAnswer);
 
 function chooseAnswer(){
-
-}
-
-nextButton.addEventListener('click', nextQuestion);
-
-function nextQuestion(){
 
 }
 
