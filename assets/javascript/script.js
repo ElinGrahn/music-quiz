@@ -2,7 +2,7 @@ let intro = document.getElementById('intro');
 const answerButtons = document.querySelector('.answer-btn');
 const startButton = document.querySelector('.start-btn');
 const nextButton = document.querySelector('.next-btn');
-const SubmitButton = document.querySelector('.submit-btn');
+const submitButton = document.querySelector('.submit-btn');
 const restart = document.querySelector('.restart-btn');
 const options = document.querySelector('options-btn');
 
@@ -16,11 +16,13 @@ function startGame (){
     console.log('hello');
     startButton.classList.add('hide');
     answerButtons.classList.remove('hide');
+    //Questions will show in a random order
     const randomQuestions = questions.sort(() => Math.random() - .5);
-    nextQuestion();
+    showQuestion();
 }
 
-function nextQuestion() {
+//Display the questions
+function showQuestion() {
 
     let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
@@ -35,20 +37,26 @@ function nextQuestion() {
     })
 }
 
+// To show the answers written in the questions.js
 function showActualQuestions(){
-
+    nextButton.style.display = 'none';
+    while (answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
 }
 
+//When an option is clicked, submit button will show
 answerButtons.addEventListener('click', chooseAnswer);
 
 function chooseAnswer(){
-
+    submitButton.classList.remove('hide');
 }
 
-SubmitButton.addEventListener('click', submitAnswer);
+//When submit button is clicked, next button will show
+submitButton.addEventListener('click', submitAnswer);
 
 function submitAnswer(){
-
+    nextButton.style.display = 'none';
 }
 
 restart.addEventListener('click', restartGame);
