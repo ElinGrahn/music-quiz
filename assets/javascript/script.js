@@ -1,13 +1,12 @@
 let intro = document.getElementById('intro');
-const answerButtons = document.querySelector('.answer-btn');
-const startButton = document.querySelector('.start-btn');
-const nextButton = document.querySelector('.next-btn');
-const submitButton = document.querySelector('.submit-btn');
-const restart = document.querySelector('.restart-btn');
-const options = document.querySelector('options-btn');
-
-
-let currentQuestionIndex = 1;
+let answerButtons = document.querySelector('.answer-btn');
+let startButton = document.querySelector('.start-btn');
+let nextButton = document.querySelector('.next-btn');
+let submitButton = document.querySelector('.submit-btn');
+let restart = document.querySelector('.restart-btn');
+let options = document.querySelector('options-btn');
+let randomQuestions = questions.sort(() => Math.random() - .5);
+let currentQuestionIndex = 0;
 let score = 0;
 
 startButton.addEventListener('click', startGame);
@@ -17,7 +16,7 @@ function startGame (){
     startButton.classList.add('hide');
     answerButtons.classList.remove('hide');
     //Questions will show in a random order
-    const randomQuestions = questions.sort(() => Math.random() - .5);
+    randomQuestions();
     showQuestion();
 }
 
@@ -26,7 +25,7 @@ function showQuestion() {
 
     let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
-    intro.innerHTML = currentQuestionIndex + ' out of 15' + "<br>" + currentQuestion.question;
+    intro.innerHTML = questionNum + ' out of 15' + "<br>" + currentQuestion.question;
 
     showActualQuestions();
     currentQuestion.answer.forEach(answer =>{
@@ -56,11 +55,12 @@ function chooseAnswer(){
 submitButton.addEventListener('click', submitAnswer);
 
 function submitAnswer(){
-    nextButton.style.display = 'none';
+    nextButton.classList.remove('hide');
+
 }
 
 restart.addEventListener('click', restartGame);
 
 function restartGame(){
-
+    startGame();
 }

@@ -11,9 +11,9 @@ Github pages
 ## User stories
 
 * As a visiting user I want to play a quiz game
-* I want to have options to choose from
-* I want it to be easy to move on to te next question
-* I want to see how many questions I have done and how many I have left
-* I want to knowwhich answer id correct
-* At the end I want to see my score
-* I want to be able to try the quiz again
+* As a visiting user I want to have options to choose from
+* As a visiting user I want it to be easy to move on to te next question
+* As a visiting user I want to see how many questions I have done and how many I have left
+* As a visiting user I want to knowwhich answer id correct
+* As a visiting user At the end I want to see my score
+* As a visiting user I want to be able to try the quiz again
