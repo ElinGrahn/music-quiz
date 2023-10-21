@@ -81,6 +81,14 @@ background-color: #dbc1ac;
     display: none;
 }
 
+.correct{
+    background-color: #DAF7A6;
+}
+
+.incorrect{
+    background-color: #E35335;
+}
+
 /*Media query min-width 768px*/
 @media screen and (min-width: 768px) {
 

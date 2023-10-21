@@ -1,4 +1,4 @@
-const questions = [
+let questions = [
     {
         question: "Which British rock/metal band has recently gotten very popular on platforms like TikTok?",
         answer: [
