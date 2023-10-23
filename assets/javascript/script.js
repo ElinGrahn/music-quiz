@@ -16,7 +16,7 @@ function startGame() {
     startButton.classList.add('hide');
     answerButtons.classList.remove('hide');
     //Questions will show in a random order
-    let randomQuestions = questions.sort(() => Math.random() - .5);
+    let randomQuestions = questions.sort(() => Math.random() * questions.length);
     showQuestion();
 }
 
@@ -24,7 +24,7 @@ function startGame() {
 function showQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
-    intro.innerHTML = currentQuestionIndex + ' out of 15' + "<br>" + currentQuestion.question;
+    intro.innerHTML = currentQuestionIndex + ' out of 15' + "<br>" + currentQuestion.questions;
 
 
     showActualQuestions();
@@ -47,19 +47,23 @@ function showActualQuestions() {
     }
 }
 
-//When an option is clicked, submit button will show
-answerButtons.addEventListener('click', chooseAnswer);
-
-function chooseAnswer() {
-    submitButton.classList.remove('hide');
-   
-}
-
 //When submit button is clicked, next button will show
 submitButton.addEventListener('click', submitAnswer);
 
 function submitAnswer() {
     nextButton.classList.remove('hide');
+}
+
+
+nextButton.addEventListener('click', nextQuestion);
+
+function nextQuestion(){
+    for (let i = 0; i === questions.length; i++);
+    showQuestion();
+    currentQuestionIndex++;
+    startGame();
+    submitButton.classList.add('hide');
+    nextButton.classList.add('hide');
 }
 
 restart.addEventListener('click', restartGame);
@@ -77,4 +81,5 @@ function selectAnswer(event){
     } else{
         chosenAnswer.classList.add('incorrect');
     }
+    submitButton.classList.remove('hide');
 }
