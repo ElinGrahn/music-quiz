@@ -76,6 +76,13 @@ background-color: #dbc1ac;
     font-family: Kalam;
 }
 
+.next-btn{
+    margin-left: 2px;
+}
+
+.submit-btn{
+    margin-right: 2px;
+}
 
 .hide{
     display: none;

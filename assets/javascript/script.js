@@ -42,7 +42,6 @@ function showQuestion() {
 
 // To show the answers written in the questions.js
 function showActualQuestions() {
-    nextButton.style.display = 'none';
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
@@ -61,7 +60,6 @@ submitButton.addEventListener('click', submitAnswer);
 
 function submitAnswer() {
     nextButton.classList.remove('hide');
-
 }
 
 restart.addEventListener('click', restartGame);
@@ -72,9 +70,9 @@ function restartGame() {
 
 function selectAnswer(event){
     let chosenAnswer = event.target;
-    let correctAnswer = chosenAnswer.dataset.correct === 'true';
+    let correctAnswer = chosenAnswer.dataset.correct;
     if(correctAnswer){
-        chosenAnswer.classList.add('correct');
+        chosenAnswer.classList.add('.correct');
         score++;
     } else{
         chosenAnswer.classList.add('incorrect');
