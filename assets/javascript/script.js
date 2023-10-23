@@ -16,8 +16,12 @@ function startGame() {
     startButton.classList.add('hide');
     answerButtons.classList.remove('hide');
     //Questions will show in a random order
-    let randomQuestions = questions.sort(() => Math.random() - '.5');
-    showQuestion();
+    randomQuestions();
+    showQuestion(); 
+}
+
+function randomQuestions(){
+    let i = questions.sort(() => Math.floor(Math.random() - '.5'));
 }
 
 //Display the questions
@@ -64,19 +68,24 @@ function nextQuestion(){
     startGame();
     submitButton.classList.add('hide');
     nextButton.classList.add('hide');
+    if(i < questions.length){
+        nextQuestion();
+    } else {
+        restartGame();
+    }
 }
 
 restart.addEventListener('click', restartGame);
 
 function restartGame() {
-    startGame();
+    console.log('good');
 }
 
 function selectAnswer(event){
     let chosenAnswer = event.target;
     let correctAnswer = chosenAnswer.dataset.correct;
     if(correctAnswer){
-        chosenAnswer.classList.add('.correct');
+        chosenAnswer.classList.add('correct');
         score++;
     } else{
         chosenAnswer.classList.add('incorrect');
