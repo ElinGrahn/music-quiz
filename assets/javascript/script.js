@@ -16,7 +16,7 @@ function startGame() {
     startButton.classList.add('hide');
     answerButtons.classList.remove('hide');
     //Questions will show in a random order
-    let randomQuestions = questions.sort(() => Math.random() * questions.length);
+    let randomQuestions = questions.sort(() => Math.random() - '.5');
     showQuestion();
 }
 
@@ -24,7 +24,7 @@ function startGame() {
 function showQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
-    intro.innerHTML = currentQuestionIndex + ' out of 15' + "<br>" + currentQuestion.questions;
+    intro.innerHTML = currentQuestionIndex + ' out of 15' + "<br>" + currentQuestion.question;
 
 
     showActualQuestions();

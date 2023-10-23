@@ -119,4 +119,12 @@ let questions = [
             { text: "Darkbeat", correct: false }
         ]
     },
+    {
+        question: "What's the name of the popular dancer from Jungle's single 'Back on 74'?",
+        answer: [
+            { text: "Kyle Hanagami", correct: false },
+            { text: "Will West", correct: true },
+            { text: "Derek Hough", correct: false }
+        ]
+    },
 ];
