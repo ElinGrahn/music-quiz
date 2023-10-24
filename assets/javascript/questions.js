@@ -1,4 +1,4 @@
-let questions = [
+let QUESTIONS = [
     {
         question: "Which British rock/metal band has recently gotten very popular on platforms like TikTok?",
         answer: [

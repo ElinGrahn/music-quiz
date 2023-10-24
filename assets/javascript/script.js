@@ -19,13 +19,15 @@ function startGame() {
     console.log('hello');
     startButton.classList.add('hide');
     answerButtons.classList.remove('hide');
-    //Questions will show in a random order
     randomQuestions();
     showQuestion();
 }
-//w3schools thank you
+/**
+ * w3schools 
+ * To get the questions in a random order
+ */
 function randomQuestions() {
-    let x = questions;
+    let x = QUESTIONS;
     for(let i = x.length -1; i > 0; i--){
         let j = Math.floor(Math.random() * (i+1));
         let k = x[i];
@@ -34,9 +36,11 @@ function randomQuestions() {
     }
 }
 
-//Display the questions
+/** 
+* Display the questions
+*/
 function showQuestion() {
-    let currentQuestion = questions[currentQuestionIndex];
+    let currentQuestion = QUESTIONS[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
     intro.innerHTML = questionNum + ' out of 16' + "<br>" + currentQuestion.question;
 
@@ -54,14 +58,18 @@ function showQuestion() {
     });
 }
 
-// To show the answers written in the questions.js
+/** 
+ *  To show the answers written in the questions.js
+ */
 function showActualQuestions() {
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
-//When submit button is clicked, next button will show
+/**
+ * When submit button is clicked, next button will show
+ */
 submitButton.addEventListener('click', submitAnswer);
 
 function submitAnswer() {
@@ -71,8 +79,12 @@ function submitAnswer() {
 
 nextButton.addEventListener('click', nextQuestion);
 
+/**
+ * When the next button is clicked the questions will continue until all questions have been shown
+ * then the endOfGame function will appear
+ */
 function nextQuestion() {
-    if (currentQuestionIndex < questions.length) {
+    if (currentQuestionIndex < QUESTIONS.length) {
         console.log(currentQuestionIndex);
     } else {
         endOfGame();
@@ -86,6 +98,9 @@ function nextQuestion() {
 
 restart.addEventListener('click', startOver);
 
+/**
+ * clicking the restart button will restart the game
+ */
 function startOver(){
     startButton.classList.remove('hide');
     restart.classList.add('hide');
@@ -94,6 +109,9 @@ function startOver(){
     intro.innerHTML = questionNum + ' out of 16' + "<br>" + currentQuestion.question;
 }
 
+/**
+ * When finishing all the question a restart button will appear
+ */
 function endOfGame() {
     console.log('good');
     intro.innerHTML = `Good job! Your score is <br> ${score} out of 16.<br> Would you like to try again?`;
@@ -104,7 +122,10 @@ function endOfGame() {
 }
 
 
-
+/**
+ * When the user clicks the right answer the button will turn green and when they click the wrong 
+ * answer it will turn red
+ */
 function selectAnswer(event) {
     let chosenAnswer = event.target;
     let correctAnswer = chosenAnswer.dataset.correct === "true";

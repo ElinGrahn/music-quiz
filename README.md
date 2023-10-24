@@ -66,18 +66,50 @@ These were the wireframes for the project
 
 ### Code Validation
 
-The code has been validated by using these validators:
+The code has been validated and found no errors by using these validators:
 
 * W3C Markup Validator
   * Validation of the HTML
-* Jigsaw Validator
+* Jigsaw (Validator)
   * Validation of the CSS
 * JSHint
   * Validation of the JavaScript
 
 ### Test cases
 
+### Fixed bugs
+
+* Random Questions
+  * I know I was supposed to use the math object but there seem to be many different ways to use it. In the end by following W3schools code I got there.
+* Restarting the game
+  * The game went back to the last question asked instead of really starting over, so I realised I had to set the number index to 0 again as well as the score.
+* Getting the correct answer to show up. 
+  * For some reason when the correct answer is clicked it does not turn green as I've written in the if statement. I'm thinking the computer can't read the boolean for some reason. Still have not solved this.
+
+### Supported sceens and browsers
+
+## Deployment
+
+### Github
+
+The website was pushed from codeanywhere workspace to a Github repository
+
+### Github Pages
+
+The website was deployed to GitHub pages using the following steps:
+
+Selecting the settings in your chosen repository
+
+Scroll down and select main as your source
+
+This will give you a deployed link
+
+Here is the link for this project: 
+
 ## Credits
 
+<https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event>
+For the DOMcontentloaded
 
-
+https://favicon.io/emoji-favicons/musical-notes
+favicon
