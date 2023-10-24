@@ -2,7 +2,7 @@ let questions = [
     {
         question: "Which British rock/metal band has recently gotten very popular on platforms like TikTok?",
         answer: [
-            {text: "Sleep Token", correct: true},
+            { text: "Sleep Token", correct: true },
             { text: "Bad Omens", correct: false },
             { text: "Spiritbox", correct: false }
         ]
