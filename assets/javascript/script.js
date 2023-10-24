@@ -19,9 +19,9 @@ function startGame() {
     randomQuestions();
     showQuestion(); 
 }
-
+//stack overflow if it works
 function randomQuestions(){
-    let x = questions.sort(() => Math.floor(Math.random() - '.5'));
+    let x = questions[Math.floor(Math.random()*questions.length)];
 }
 
 //Display the questions
@@ -62,18 +62,16 @@ function submitAnswer() {
 nextButton.addEventListener('click', nextQuestion);
 
 function nextQuestion(){
-    let i = 0;
-    while ( i <= questions.length){
-        i++
+    for(let i = 0; i <= questions.length; i++){
+        if(i > questions.length){
+            restartGame();
+        }
     }
     showQuestion();
     currentQuestionIndex++;
     startGame();
     submitButton.classList.add('hide');
     nextButton.classList.add('hide');
-    if( i > questions.length){
-    restartGame();
-    }
 }
 
 restart.addEventListener('click', restartGame);
