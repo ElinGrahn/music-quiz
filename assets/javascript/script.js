@@ -6,7 +6,7 @@ let submitButton = document.querySelector('.submit-btn');
 let restart = document.querySelector('.restart-btn');
 let options = document.querySelector('options-btn');
 
-let currentQuestionIndex = 1;
+let currentQuestionIndex = 0;
 let score = 0;
 
 startButton.addEventListener('click', startGame);
@@ -21,14 +21,14 @@ function startGame() {
 }
 
 function randomQuestions(){
-    let i = questions.sort(() => Math.floor(Math.random() - '.5'));
+    let x = questions.sort(() => Math.floor(Math.random() - '.5'));
 }
 
 //Display the questions
 function showQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
     let questionNum = currentQuestionIndex + 1;
-    intro.innerHTML = currentQuestionIndex + ' out of 15' + "<br>" + currentQuestion.question;
+    intro.innerHTML = questionNum + ' out of 15' + "<br>" + currentQuestion.question;
 
 
     showActualQuestions();
@@ -62,16 +62,17 @@ function submitAnswer() {
 nextButton.addEventListener('click', nextQuestion);
 
 function nextQuestion(){
-    for (let i = 0; i === questions.length; i++);
+    let i = 0;
+    while ( i <= questions.length){
+        i++
+    }
     showQuestion();
     currentQuestionIndex++;
     startGame();
     submitButton.classList.add('hide');
     nextButton.classList.add('hide');
-    if(i < questions.length){
-        nextQuestion();
-    } else {
-        restartGame();
+    if( i > questions.length){
+    restartGame();
     }
 }
 
