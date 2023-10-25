@@ -14,7 +14,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-border: 2px double black;
+border: 2px double #000000;
 background-color: #dbc1ac;
 }
 
@@ -33,7 +33,7 @@ background-color: #dbc1ac;
     margin-top: 30px;
     margin-left: 6px;
     text-align: center;
-    border: 2px double black;
+    border: 2px double #000000;
 }
 
 .questions-div>p{
@@ -51,7 +51,7 @@ background-color: #dbc1ac;
 }
 
 .btn{
-    border: 1px solid black;
+    border: 1px solid #000000;
     background-color: #dbc1ac;
     height: 40px;
     width: 70px;
@@ -62,14 +62,14 @@ background-color: #dbc1ac;
 
 /*GreatStack*/
 .options-btn:hover{
-    border-color: aliceblue;
+    border-color: #f0f8ff;
 }
 
 
 .options-btn{
     width: 90%;
     text-align: left;
-    border: 1px solid black;
+    border: 1px solid #000000;
     background-color: #dbc1ac;
     height: 40px;
     margin-top: 15px;

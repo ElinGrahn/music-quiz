@@ -2,7 +2,7 @@
 
 The purpose of this game is to test the players knowledge about moments and and songs in the modern music culture. With platforms like tiktok and instagram viral and well known moments are shared in a completely different way than it was before. You don't have to be a fan or even know an artist to keep up with everything that happens in the musical world, that information will be brought to you. Therfore it would be fun to test how aware people are.
 
-![Am I Responsive](assets/screenshots/pp2_amIResponsive.png)
+![Am I Responsive](screenshots/pp2_amIResponsive.png)
 
 The live website: [Music Quiz](https://elingrahn.github.io/music-quiz/)
 
@@ -21,21 +21,21 @@ The live website: [Music Quiz](https://elingrahn.github.io/music-quiz/)
 ### Start page
 
 A small introduction to the game and what the visitor can expect
-![Start page](assets/screenshots/pp2_startPage.png)
+![Start page](screenshots/pp2_startPage.png)
 
 ### Buttons
 
 There is a start button, submit button, next button and a restart button
 
-![Start button](assets/screenshots/pp2_startBtn.png)
-![Submit button](assets/screenshots/pp2_submitBtn.png)
-![Next button](assets/screenshots/pp2_nextBtn.png)
-![Restart button](assets/screenshots/pp2_restartBtn.png)
+![Start button](screenshots/pp2_startBtn.png)
+![Submit button](screenshots/pp2_submitBtn.png)
+![Next button](screenshots/pp2_nextBtn.png)
+![Restart button](screenshots/pp2_restartBtn.png)
 
 ### The options
 
 You can press the option you think is right and it will turn red or green depening if the answer is correct or not
-<!--Pic-->
+![Wrong option](screenshots/pp2_wrong.png)
 
 ### Score
 
@@ -44,7 +44,9 @@ At the end of the game you will be able to see your score
 
 ## Typography and color scheeme
 
-I wanted the game to have a youthful feel, since it is about the modern day music culture. The font family is Kalam from [Google fonts](https://fonts.google.com/) and the colors are in a soft neutral palette. I chose the colors from [Color hex](www.color-hex.com) and [HTML color codes](htmlcolorcodes.com)
+I wanted the game to have a youthful feel, since it is about the modern day music culture. The font family is Kalam from [Google fonts](https://fonts.google.com/).
+The colors are in a soft neutral palette. I chose the colors from [Color hex](www.color-hex.com) and [HTML color codes](htmlcolorcodes.com)
+![Color palette](screenshots/pp2_colorPalette.png)
 
 ## Technology
 
@@ -72,10 +74,8 @@ The code has been validated and found no errors by using these validators:
 * JSHint
   * Validation of the JavaScript
 
-Testing accessability using lighthouse
-[Lighthouse](assets/screenshots/)
-
-### Test cases
+Testing accessability using Lighthouse
+[Lighthouse](screenshots/pp2_accessability.png)
 
 ### Fixed bugs
 
@@ -121,4 +121,6 @@ Here is the link for this project:
 
 ### Media
 
-[Favicon](https://favicon.io/emoji-favicons/musical-notes)
+* [Favicon](https://favicon.io/emoji-favicons/musical-notes)
+
+* Picture of the color palette from [coolors](https://coolors.co/ffd2c6-dbc1ac-fff4e6-f0f8ff-d1e3dd)
