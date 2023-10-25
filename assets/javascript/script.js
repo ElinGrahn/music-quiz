@@ -4,7 +4,6 @@ let startButton = document.querySelector('.start-btn');
 let nextButton = document.querySelector('.next-btn');
 let submitButton = document.querySelector('.submit-btn');
 let restart = document.querySelector('.restart-btn');
-let options = document.querySelector('options-btn');
 let currentQuestionIndex = 0;
 let score = 0;
 
@@ -15,6 +14,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 startButton.addEventListener('click', startGame);
 
+/**
+ * Web Dev Simplified and GreatStack
+ */
 function startGame() {
     console.log('hello');
     startButton.classList.add('hide');
@@ -38,6 +40,7 @@ function randomQuestions() {
 
 /** 
 * Display the questions
+* credit - GreatStack
 */
 function showQuestion() {
     let currentQuestion = QUESTIONS[currentQuestionIndex];
@@ -125,6 +128,7 @@ function endOfGame() {
 /**
  * When the user clicks the right answer the button will turn green and when they click the wrong 
  * answer it will turn red
+ * credit - GreatStack
  */
 function selectAnswer(event) {
     let chosenAnswer = event.target;

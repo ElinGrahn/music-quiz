@@ -60,6 +60,7 @@ background-color: #dbc1ac;
     font-family: Kalam;
 }
 
+/*GreatStack*/
 .options-btn:hover{
     border-color: aliceblue;
 }
@@ -84,6 +85,7 @@ background-color: #dbc1ac;
     margin-right: 2px;
 }
 
+/*Web Dev Simplified*/
 .hide{
     display: none;
 }
