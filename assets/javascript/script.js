@@ -121,5 +121,5 @@ function selectAnswer(event) {
     } else {
         chosenAnswer.classList.add('incorrect');
     }
-    setTimeout(nextQuestion, 1500);
+    setTimeout(nextQuestion, 1000);
 }

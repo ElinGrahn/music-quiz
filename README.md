@@ -12,7 +12,7 @@ The live website: [Music Quiz](https://elingrahn.github.io/music-quiz/)
 * As a visiting user I want to have options to choose from
 * As a visiting user I want it to be easy to move on to te next question
 * As a visiting user I want to see how many questions I have done and how many I have left
-* As a visiting user I want to knowwhich answer id correct
+* As a visiting user I want to know which answer is correct
 * As a visiting user I want to see my score at the end
 * As a visiting user I want to be able to try the quiz again
 
@@ -25,28 +25,33 @@ A small introduction to the game and what the visitor can expect
 
 ### Buttons
 
-There is a start button, submit button, next button and a restart button
+There is a start button and a restart button
 
 ![Start button](screenshots/pp2_startBtn.png)
-![Submit button](screenshots/pp2_submitBtn.png)
-![Next button](screenshots/pp2_nextBtn.png)
 ![Restart button](screenshots/pp2_restartBtn.png)
 
 ### The options
 
 You can press the option you think is right and it will turn red or green depening if the answer is correct or not
 ![Wrong option](screenshots/pp2_wrong.png)
+![correct option](screenshots/pp2_right.png)
 
 ### Score
 
 At the end of the game you will be able to see your score
-<!--Pic-->
+![Score](screenshots/pp2_score.png)
 
 ## Typography and color scheeme
 
 I wanted the game to have a youthful feel, since it is about the modern day music culture. The font family is Kalam from [Google fonts](https://fonts.google.com/).
 The colors are in a soft neutral palette. I chose the colors from [Color hex](www.color-hex.com) and [HTML color codes](htmlcolorcodes.com)
 ![Color palette](screenshots/pp2_colorPalette.png)
+
+## Future features
+
+In the future I would like to add some more styling like images or questions where the user will hear a snippet of a song and then has to guess what it is.
+
+I would also like to make the page more interactive by having a sign up page or a form where the user can send feedback.
 
 ## Technology
 
@@ -75,18 +80,16 @@ The code has been validated and found no errors by using these validators:
   * Validation of the JavaScript
 
 Testing accessability using Lighthouse
-[Lighthouse](screenshots/pp2_accessability.png)
+![Lighthouse](screenshots/pp2_accessability.png)
 
 ### Fixed bugs
 
 * Random Questions
-  * I know I was supposed to use the math object but there seem to be many different ways to use it. In the end by following W3schools code I got there.
+  * I knew I was supposed to use the math object but there seem to be many different ways to use it. In the end by following W3schools code I got there.
 * Restarting the game
   * The game went back to the last question asked instead of really starting over, so I realised I had to set the number index to 0 again as well as the score.
-* Getting the correct answer to show up. 
-  * For some reason when the correct answer is clicked it does not turn green as I've written in the if statement. I'm thinking the computer can't read the boolean for some reason. Still have not solved this.
-
-### Unfixed bugs
+* Getting the correct answer to show up.
+  * When the correct answer was clicked it did not turn green. By creating a new global variable, correctAnswer, and setting it to null so later I could set it to answer.text and then use it in the funtion selectAnswer where the variable correct would have the value of correctAnswer. And if correct is true it the answer button now turns green.
 
 ### Supported sceens and browsers
 
@@ -120,6 +123,8 @@ Here is the link for this project:
 * [W3schools](https://www.w3schools.com/) to help me with the randomization of the questions array
 
 * For the [DOMcontentloaded](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event)
+
+* Mentor Rohit Sharma for feedback
 
 ### Media
 
