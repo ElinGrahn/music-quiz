@@ -107,15 +107,15 @@ let QUESTIONS = [
         question: "Previous Disney Channel star who 'used to be young' and can by herself flowers?",
         answer: [
             { text: "Demi Lovato", correct: false },
-            { text: "Selena Gomez", correct: true },
-            { text: "Miley Cyrus", correct: false }
+            { text: "Selena Gomez", correct: false },
+            { text: "Miley Cyrus", correct: true }
         ]
     },
     {
         question: "A subgenre of hip hop and trap that got popular on TikTok some year ago?",
         answer: [
-            { text: "Phonk", correct: false },
-            { text: "Rave", correct: true },
+            { text: "Phonk", correct: true },
+            { text: "Rave", correct: false },
             { text: "Darkbeat", correct: false }
         ]
     },

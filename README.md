@@ -86,6 +86,8 @@ Testing accessability using Lighthouse
 * Getting the correct answer to show up. 
   * For some reason when the correct answer is clicked it does not turn green as I've written in the if statement. I'm thinking the computer can't read the boolean for some reason. Still have not solved this.
 
+### Unfixed bugs
+
 ### Supported sceens and browsers
 
 The project has been made using Microsoft Edge and has been tested and used on safari and samsung.

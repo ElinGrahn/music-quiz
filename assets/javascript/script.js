@@ -1,11 +1,10 @@
 let intro = document.getElementById('intro');
 let answerButtons = document.querySelector('.answer-btn');
 let startButton = document.querySelector('.start-btn');
-let nextButton = document.querySelector('.next-btn');
-let submitButton = document.querySelector('.submit-btn');
 let restart = document.querySelector('.restart-btn');
 let currentQuestionIndex = 0;
 let score = 0;
+let correctAnswer = null;
 
 document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM fully loaded");
@@ -56,6 +55,7 @@ function showQuestion() {
         answerButtons.appendChild(button);
         if (answer.correct) {
             answerButtons.dataset.correct = answer.correct;
+            correctAnswer = answer.text;
         }
         answerButtons.addEventListener('click', selectAnswer);
     });
@@ -71,20 +71,7 @@ function showActualQuestions() {
 }
 
 /**
- * When submit button is clicked, next button will show
- */
-submitButton.addEventListener('click', submitAnswer);
-
-function submitAnswer() {
-    nextButton.classList.remove('hide');
-}
-
-
-nextButton.addEventListener('click', nextQuestion);
-
-/**
- * When the next button is clicked the questions will continue until all questions have been shown
- * then the endOfGame function will appear
+ * When all of the questions have been shown the endOfGame function will appear
  */
 function nextQuestion() {
     if (currentQuestionIndex < QUESTIONS.length) {
@@ -92,11 +79,8 @@ function nextQuestion() {
     } else {
         endOfGame();
     }
-
-    showQuestion();
     currentQuestionIndex++;
-    submitButton.classList.add('hide');
-    nextButton.classList.add('hide');
+    showQuestion();
 }
 
 restart.addEventListener('click', startOver);
@@ -119,8 +103,6 @@ function endOfGame() {
     console.log('good');
     intro.innerHTML = `Good job! Your score is <br> ${score} out of 16.<br> Would you like to try again?`;
     answerButtons.classList.add('hide');
-    nextButton.classList.add('hide');
-    submitButton.classList.add('hide');
     restart.classList.remove('hide');
 }
 
@@ -132,12 +114,12 @@ function endOfGame() {
  */
 function selectAnswer(event) {
     let chosenAnswer = event.target;
-    let correctAnswer = chosenAnswer.dataset.correct === "true";
-    if (correctAnswer) {
+    let correct = chosenAnswer.innerText === correctAnswer;
+    if (correct) {
         chosenAnswer.classList.add('correct');
         score++;
     } else {
         chosenAnswer.classList.add('incorrect');
     }
-    submitButton.classList.remove('hide');
+    setTimeout(nextQuestion, 1500);
 }
