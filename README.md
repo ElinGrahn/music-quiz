@@ -47,6 +47,16 @@ I wanted the game to have a youthful feel, since it is about the modern day musi
 The colors are in a soft neutral palette. I chose the colors from [Color hex](www.color-hex.com) and [HTML color codes](htmlcolorcodes.com)
 ![Color palette](screenshots/pp2_colorPalette.png)
 
+## Wireframes
+
+I did the wireframes on a phone as that is where I wanted to put most of my focus and time to make sure all of the proportions were right.
+
+ At first I wanted a next button but when my mentor mentioned the idea of setTimeout instead I thought that would make the quiz stand out a little more, and thus took it away.
+  
+<img src ="screenshots/pp2_wireframe1.png" alt = "first page" height = "400px"/>
+<img src = "screenshots/pp2_wireframe2.png" alt = "actual game" height = "400px"/>
+<img src = "screenshots/pp2_wireframe3.png" alt = "restart page" height = "400px"/>
+
 ## Future features
 
 In the future I would like to add some more styling like images or questions where the user will hear a snippet of a song and then has to guess what it is.
@@ -55,6 +65,8 @@ I would also like to make the page more interactive by having a sign up page or 
 
 ## Technology
 
+* Wireframes
+  * Visualising the project
 * HTML
   * For  the structure
 * CSS
