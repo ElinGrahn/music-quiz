@@ -55,7 +55,6 @@ background-color: #dbc1ac;
     background-color: #dbc1ac;
     height: 40px;
     width: 70px;
-    margin-top: 15px;
     left: 90px;
     font-family: Kalam;
 }
@@ -75,14 +74,6 @@ background-color: #dbc1ac;
     margin-top: 15px;
     left: 90px;
     font-family: Kalam;
-}
-
-.next-btn{
-    margin-left: 2px;
-}
-
-.submit-btn{
-    margin-right: 2px;
 }
 
 /*Web Dev Simplified*/

@@ -18,7 +18,6 @@ restart.addEventListener('click', startOver);
  * Web Dev Simplified and GreatStack
  */
 function startGame() {
-    console.log('hello');
     startButton.classList.add('hide');
     answerButtons.classList.remove('hide');
     randomQuestions();

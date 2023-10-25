@@ -1,6 +1,6 @@
 # Do you know modern music culture?
 
-The purpose of this game is to test the players knowledge about moments and and songs in the modern music culture. With platforms like tiktok and instagram viral and well known moments are shared in a completely different way than it was before. You don't have to be a fan or even know an artist to keep up with everything that happens in the musical world, that information will be brought to you. Therfore it would be fun to test how aware people are.
+The purpose of this game is to test the players knowledge about moments and songs in the modern music culture. With platforms like tiktok and instagram, viral and well known moments are shared in a completely different way than it was before. You don't have to be a fan or even know an artist to keep up with everything that happens in the musical world, that information will be brought to you. Therfore it would be fun to test how aware people are.
 
 ![Am I Responsive](screenshots/pp2_amIResponsive.png)
 
@@ -10,7 +10,7 @@ The live website: [Music Quiz](https://elingrahn.github.io/music-quiz/)
 
 * As a visiting user I want to play a quiz game
 * As a visiting user I want to have options to choose from
-* As a visiting user I want it to be easy to move on to te next question
+* As a visiting user I want it to be easy to move on to the next question
 * As a visiting user I want to see how many questions I have done and how many I have left
 * As a visiting user I want to know which answer is correct
 * As a visiting user I want to see my score at the end
@@ -32,7 +32,7 @@ There is a start button and a restart button
 
 ### The options
 
-You can press the option you think is right and it will turn red or green depening if the answer is correct or not
+You can press the option you think is right and it will turn red or green depending on if the answer is correct or not
 ![Wrong option](screenshots/pp2_wrong.png)
 ![correct option](screenshots/pp2_right.png)
 
@@ -91,7 +91,7 @@ Testing accessability using Lighthouse
 * Getting the correct answer to show up.
   * When the correct answer was clicked it did not turn green. By creating a new global variable, correctAnswer, and setting it to null so later I could set it to answer.text and then use it in the funtion selectAnswer where the variable correct would have the value of correctAnswer. And if correct is true it the answer button now turns green.
 
-### Supported sceens and browsers
+### Supported screens and browsers
 
 The project has been made using Microsoft Edge and has been tested and used on safari and samsung.
 
@@ -99,7 +99,7 @@ The project has been made using Microsoft Edge and has been tested and used on s
 
 ### Github
 
-The website was pushed from codeanywhere workspace to a Github repository
+The website was pushed from Codeanywhere workspace to a Github repository
 
 ### Github Pages
 
@@ -111,18 +111,20 @@ Scroll down and select main as your source
 
 This will give you a deployed link
 
-Here is the link for this project:
+Here is the link to the live website: [Github repository](https://elingrahn.github.io/music-quiz/)
 
 ## Credits
 
 ### Content
 
 * [Web Dev Sipmpified](https://www.youtube.com/watch?v=riDzcEQbX6k) and
-[GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=863s) to help me get started on the project.
+[GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=863s) youtube videos to help me get started on the project.
 
 * [W3schools](https://www.w3schools.com/) to help me with the randomization of the questions array
 
 * For the [DOMcontentloaded](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event)
+
+* Code Institute [JavaScript Essentials](https://codeinstitute.net/se/)
 
 * Mentor Rohit Sharma for feedback
 
