@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     console.log("DOM fully loaded");
 });
 
-
 startButton.addEventListener('click', startGame);
+
+restart.addEventListener('click', startOver);
 
 /**
  * Web Dev Simplified and GreatStack
@@ -83,8 +84,6 @@ function nextQuestion() {
     showQuestion();
 }
 
-restart.addEventListener('click', startOver);
-
 /**
  * clicking the restart button will restart the game
  */
@@ -105,7 +104,6 @@ function endOfGame() {
     answerButtons.classList.add('hide');
     restart.classList.remove('hide');
 }
-
 
 /**
  * When the user clicks the right answer the button will turn green and when they click the wrong 
