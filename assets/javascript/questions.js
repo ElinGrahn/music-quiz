@@ -74,8 +74,8 @@ let QUESTIONS = [
     {
         question: "'It must be exhausting always rooting for the anti-hero' is sung by who?",
         answer: [
-            { text: "Taylor Swift", correct: false },
-            { text: "Billie Eilish", correct: true },
+            { text: "Taylor Swift", correct: true },
+            { text: "Billie Eilish", correct: false },
             { text: "Rihanna", correct: false }
         ]
     },
