@@ -2,7 +2,7 @@ let intro = document.getElementById('intro');
 let answerButtons = document.querySelector('.answer-btn');
 let startButton = document.querySelector('.start-btn');
 let restart = document.querySelector('.restart-btn');
-let currentQuestionIndex = 0;
+let currentQuestionIndex = 1;
 let score = 0;
 let correctAnswer = null;
 
