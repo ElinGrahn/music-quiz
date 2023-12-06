@@ -2,7 +2,7 @@ let intro = document.getElementById('intro');
 let answerButtons = document.querySelector('.answer-btn');
 let startButton = document.querySelector('.start-btn');
 let restart = document.querySelector('.restart-btn');
-let currentQuestionIndex = 1;
+let currentQuestionIndex = 0;
 let score = 0;
 let correctAnswer = null;
 
@@ -74,7 +74,7 @@ function showActualQuestions() {
  * When all of the questions have been shown the endOfGame function will appear
  */
 function nextQuestion() {
-    if (currentQuestionIndex < QUESTIONS.length) {
+    if (currentQuestionIndex < 15) {
         console.log(currentQuestionIndex);
         currentQuestionIndex++;
         showQuestion();
