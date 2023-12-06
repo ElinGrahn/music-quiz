@@ -75,7 +75,6 @@ function showActualQuestions() {
  */
 function nextQuestion() {
     if (currentQuestionIndex < 15) {
-        console.log(currentQuestionIndex);
         currentQuestionIndex++;
         showQuestion();
     } else {
