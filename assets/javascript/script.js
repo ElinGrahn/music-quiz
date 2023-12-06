@@ -76,11 +76,11 @@ function showActualQuestions() {
 function nextQuestion() {
     if (currentQuestionIndex < QUESTIONS.length) {
         console.log(currentQuestionIndex);
+        currentQuestionIndex++;
+        showQuestion();
     } else {
         endOfGame();
     }
-    currentQuestionIndex++;
-    showQuestion();
 }
 
 /**
@@ -98,7 +98,6 @@ function startOver(){
  * When finishing all the question a restart button will appear
  */
 function endOfGame() {
-    console.log('good');
     intro.innerHTML = `Good job! Your score is <br> ${score} out of 16.<br> Would you like to try again?`;
     answerButtons.classList.add('hide');
     restart.classList.remove('hide');
